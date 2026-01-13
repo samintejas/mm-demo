@@ -1,0 +1,10 @@
+demo.samintejas.in {
+
+    root * /home/samin/demo/frontend
+    file_server
+
+    handle_path /api/* {
+        reverse_proxy localhost:8080
+    }
+
+}
