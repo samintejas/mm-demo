@@ -4,13 +4,13 @@ let vote = {
 };
 
 async function castVote(option) {
-  await fetch(`http://demo.samintejas.in/api/vote?option=${option}`, {
+  await fetch(`https://demo.samintejas.in/api/vote?option=${option}`, {
     method: "GET",
   });
 }
 
 async function leader() {
-  const response = await fetch("http://demo.samintejas.in/api/msg");
+  const response = await fetch("https://demo.samintejas.in/api/msg");
   const data = await response.json();
   return data.message;
 }
